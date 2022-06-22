@@ -42,9 +42,9 @@ const NavBar = ({ setTheme, checked }) => {
             onClick={handle}
             className=" md:hidden hover:cursor-pointer">
             {menu ? (
-              <XIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+              <XIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
             ) : (
-              <MenuIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+              <MenuIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
             )}
           </button>
         </div>
