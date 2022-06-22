@@ -2,7 +2,7 @@
 
 created with tailwind css and react js
 
-[Live Demo](https://landing-page-tailwind-livid.vercel.app/)
+[Live Demo](https://landing-page-tailwind-umber.vercel.app/)
 
 <br/>
 <p align="center">
