@@ -71,7 +71,7 @@ const NavBar = ({ setTheme, checked }) => {
               <a
                 href="#"
                 class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Services
+                Courses
               </a>
             </li>
             <li>
@@ -86,31 +86,31 @@ const NavBar = ({ setTheme, checked }) => {
       </div>
       <div class="md:hidden">
         <div
-          class={`absolute flex-col items-center divide-y self-end py-8 mt-0 space-y-2 font-semibold sm:w-auto sm:self-center left-6 right-6 bg-white shadow-lg dark:bg-gray-800 ${menuClass}`}>
+          class={`absolute flex-col items-center self-end py-8 mt-0 space-y-2 font-semibold sm:w-auto sm:self-center left-6 right-6 bg-white shadow-lg dark:bg-gray-800 ${menuClass}`}>
           <a
             className=" text-gray-800 dark:text-white w-80 text-center py-1"
             href="#">
-            Pricing
+            Home
           </a>
           <a
             className=" text-gray-800 dark:text-white w-80 text-center py-1"
             href="#">
-            Product
+            About
           </a>
           <a
             className=" text-gray-800 dark:text-white w-80 text-center py-1"
             href="#">
-            About Us
+            Courses
           </a>
           <a
             className=" text-gray-800 dark:text-white w-80 text-center py-1"
             href="#">
-            Careers
+            Jobs
           </a>
           <a
             className=" text-gray-800 dark:text-white w-80 text-center py-1"
             href="#">
-            Community
+            Contact
           </a>
         </div>
       </div>
