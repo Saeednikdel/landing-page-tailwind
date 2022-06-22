@@ -49,22 +49,21 @@ function App() {
               src={education}
             />
             <h1 className=" mt-6 text-2xl font-bold text-gray-900 lg:text-3xl lg:mt-8 dark:text-gray-200">
-              you can work from anywhere.
+              Learn any programming language.
               <br />
-              <span className=" text-red-400"> take advantage of it</span>
+              <span className=" text-red-400">zero to hero</span>
             </h1>
-            <p className="mt-2 text-gray-600 lg:mt-8 dark:text-gray-300">
-              Line 8:11: img elements must have an alt prop, either with
-              meaningful text, or an empty string for decorative images
-              jsx-a11y/alt-text Line 9:11: img elements must have an alt prop,
-              either with meaningful text, or an empty string for decorative
-              images jsx-a11y/alt-text
+            <p className="mt-2 text-lg text-semibold text-gray-600 lg:mt-8 dark:text-gray-300">
+              we provide free programming courses for any one around the world,
+              with zero knowledge of programming. if you are a programmer
+              already you can join our team of developers or our tutors. share
+              your knowledge to make the world a better place. 🌎💕
             </p>
             <div className="space-x-2 mt-4 sm:mt-6">
               <button
                 type="button"
                 className="text-white capitalize bg-red-600 hover:bg-red-700 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-full text-lg px-5 py-2 text-center">
-                book your escape
+                join us now
               </button>
               <button
                 type="button"
