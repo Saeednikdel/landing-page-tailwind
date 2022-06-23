@@ -7,8 +7,9 @@ import js from './img/js.png';
 import python from './img/python.jpg';
 import css from './img/css.png';
 
-import Card from './Card';
+import Card from './components/Card';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -87,6 +88,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
