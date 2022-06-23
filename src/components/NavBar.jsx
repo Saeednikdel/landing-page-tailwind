@@ -14,7 +14,7 @@ const NavBar = ({ setTheme, checked }) => {
     setMenu(!menu);
   };
   return (
-    <nav class="bg-white dark:bg-gray-800 shadow-sm border-1 px-2 sm:px-4 py-2.5 sticky top-0 left-0 right-0 z-10">
+    <nav class="backdrop-blur-2xl backdrop-brightness-200 dark:backdrop-brightness-50 shadow-sm border-1 px-2 sm:px-4 py-2.5 sticky top-0 left-0 right-0 z-10">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <div class="flex items-center">
           <a href="#">
@@ -25,9 +25,9 @@ const NavBar = ({ setTheme, checked }) => {
             className="hover:cursor-pointer rounded-xl border p-1 border-gray-300 dark:border-gray-600"
             onClick={setTheme}>
             {checked ? (
-              <SunIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
+              <SunIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
             ) : (
-              <MoonIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
+              <MoonIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
             )}
           </button>
         </div>
@@ -42,9 +42,9 @@ const NavBar = ({ setTheme, checked }) => {
             onClick={handle}
             className=" md:hidden hover:cursor-pointer">
             {menu ? (
-              <XIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
+              <XIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
             ) : (
-              <MenuIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
+              <MenuIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
             )}
           </button>
         </div>
@@ -86,29 +86,29 @@ const NavBar = ({ setTheme, checked }) => {
       </div>
       <div class="md:hidden">
         <div
-          class={`absolute flex-col items-center self-end py-8 mt-0 space-y-2 font-semibold sm:w-auto sm:self-center left-6 right-6 bg-white shadow-lg dark:bg-gray-800 ${menuClass}`}>
+          class={`absolute flex-col items-center self-end py-8 mt-2 space-y-2 font-semibold sm:w-auto sm:self-center left-6 right-6 bg-white shadow-lg dark:bg-gray-800 ${menuClass}`}>
           <a
-            className=" text-gray-800 dark:text-white w-80 text-center py-1"
+            className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 w-80 text-center py-1"
             href="#">
             Home
           </a>
           <a
-            className=" text-gray-800 dark:text-white w-80 text-center py-1"
+            className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 w-80 text-center py-1"
             href="#">
             About
           </a>
           <a
-            className=" text-gray-800 dark:text-white w-80 text-center py-1"
+            className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 w-80 text-center py-1"
             href="#">
             Courses
           </a>
           <a
-            className=" text-gray-800 dark:text-white w-80 text-center py-1"
+            className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 w-80 text-center py-1"
             href="#">
             Jobs
           </a>
           <a
-            className=" text-gray-800 dark:text-white w-80 text-center py-1"
+            className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 w-80 text-center py-1"
             href="#">
             Contact
           </a>
