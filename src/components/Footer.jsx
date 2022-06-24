@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../img/logo.png';
+import BtnPrimary from './BtnPrimary';
 
 const Footer = () => {
   return (
@@ -85,9 +86,7 @@ const Footer = () => {
                 className="flex-1 px-4 rounded-full focus:outline-none bg-slate-100 border border-gray-400"
                 placeholder="News in your inbox"
               />
-              <button className="px-6 py-2 text-white rounded-full bg-red-600 hover:bg-red-700 focus:outline-none">
-                Go
-              </button>
+              <BtnPrimary>Go</BtnPrimary>
             </div>
           </form>
           <div className="hidden text-gray-500 md:block">
