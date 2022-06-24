@@ -1,11 +1,11 @@
 import React from 'react';
 import education from '../img/education.png';
 import BtnPrimary from './BtnPrimary';
-import BtnSecondary from './BtnSecondary';
+
 const Hero = ({ openModal }) => {
   return (
-    <div className="lg:grid lg:grid-cols-2 2xl:grid-cols-5 bg-white dark:bg-gray-800">
-      <div className="px-12 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 xl:mr-0 lg:max-w-full 2xl:col-span-2">
+    <div className="lg:grid border-b border-gray-100 dark:border-gray-700 lg:grid-cols-2 2xl:grid-cols-5 bg-white dark:bg-gray-800">
+      <div className="px-12 py-8 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-16 xl:mr-0 lg:max-w-full 2xl:col-span-2">
         <div className="xl:max-w-xl">
           <img
             className=" mt-6 w-full rounded-lg h-60 drop-shadow-xl object-cover object-center lg:hidden"
