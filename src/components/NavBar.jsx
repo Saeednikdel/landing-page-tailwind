@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../img/logo.png';
 import { MoonIcon, SunIcon, MenuIcon, XIcon } from '@heroicons/react/solid';
 import SlideMenu from './SlideMenu';
+import BtnPrimary from './BtnPrimary';
 
 const NavBar = ({ setTheme, checked, openModal }) => {
   const [menuClass, setMenuClass] = useState('hidden');
@@ -22,7 +23,7 @@ const NavBar = ({ setTheme, checked, openModal }) => {
         <div className="flex items-center">
           <button
             type="button"
-            className="hover:cursor-pointer rounded-xl border p-1 border-gray-300 dark:border-gray-600"
+            className="mx-2 hover:cursor-pointer rounded-xl border p-1 border-gray-300 dark:border-gray-600"
             onClick={setTheme}>
             {checked ? (
               <SunIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
@@ -31,12 +32,7 @@ const NavBar = ({ setTheme, checked, openModal }) => {
             )}
           </button>
 
-          <button
-            onClick={openModal}
-            type="button"
-            className="text-white capitalize bg-red-600 hover:bg-red-700 font-medium rounded-full text-sm px-5 py-2 ml-3 ">
-            Get started
-          </button>
+          <BtnPrimary onClick={openModal}>Get started</BtnPrimary>
         </div>
         <div className="flex md:order-2  items-center">
           <button
