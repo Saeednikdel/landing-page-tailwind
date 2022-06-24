@@ -1,5 +1,6 @@
 import React from 'react';
 import { XIcon } from '@heroicons/react/solid';
+import BtnPrimary from './BtnPrimary';
 
 const SingInModal = ({ modalClass, openModal }) => {
   return (
@@ -29,7 +30,7 @@ const SingInModal = ({ modalClass, openModal }) => {
                   type="email"
                   name="email"
                   id="email"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   placeholder="name@company.com"
                   required=""
                 />
@@ -45,7 +46,7 @@ const SingInModal = ({ modalClass, openModal }) => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   required=""
                 />
               </div>
@@ -66,18 +67,16 @@ const SingInModal = ({ modalClass, openModal }) => {
                     Remember me
                   </label>
                 </div>
-                <a className="text-sm text-red-700 hover:underline dark:text-red-500">
+                <a className="text-sm text-red-600 hover:underline dark:text-red-500">
                   Lost Password?
                 </a>
               </div>
-              <button
-                type="submit"
-                className="w-full text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
-                Login to your account
-              </button>
+              <div className="text-center">
+                <BtnPrimary>Login to your account</BtnPrimary>
+              </div>
               <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                Not registered?{' '}
-                <a className="text-red-700 hover:underline dark:text-red-500">
+                Not registered?
+                <a className="text-red-600 hover:underline dark:text-red-500 mx-2">
                   Create account
                 </a>
               </div>
