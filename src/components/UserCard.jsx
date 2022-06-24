@@ -3,7 +3,7 @@ import BtnPrimary from './BtnPrimary';
 import BtnSecondary from './BtnSecondary';
 const UserCard = ({ item }) => {
   return (
-    <div className="bg-white rounded-3xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="bg-white rounded-3xl shadow dark:bg-gray-800 ">
       <div className="flex flex-col items-center py-8">
         <img
           className="mb-3 w-24 h-24 rounded-full shadow-lg"
