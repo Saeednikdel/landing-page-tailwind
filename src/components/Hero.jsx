@@ -24,7 +24,6 @@ const Hero = ({ openModal }) => {
           </p>
           <div className="space-x-2 mt-4 sm:mt-6">
             <BtnPrimary onClick={openModal}>Join Us Now</BtnPrimary>
-            <BtnSecondary>learn more</BtnSecondary>
           </div>
         </div>
       </div>
