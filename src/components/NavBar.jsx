@@ -18,7 +18,7 @@ const NavBar = ({ setTheme, checked, openModal }) => {
     document.removeEventListener('click', onClickOutsideListener);
   };
   return (
-    <nav className="backdrop-blur-2xl backdrop-brightness-200 dark:backdrop-brightness-50 shadow-sm border-1 px-2 sm:px-4 py-2.5 sticky top-0 left-0 right-0 z-10">
+    <nav className="backdrop-blur-2xl backdrop-brightness-150 dark:backdrop-brightness-50 shadow-sm border-1 px-2 sm:px-4 py-2.5 sticky top-0 left-0 right-0 z-10">
       <div className="container flex flex-wrap flex-row-reverse justify-between items-center mx-auto">
         <div className="flex items-center">
           <button
