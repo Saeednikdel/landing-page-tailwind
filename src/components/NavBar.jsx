@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../img/logo.png';
 import { MoonIcon, SunIcon, MenuIcon, XIcon } from '@heroicons/react/solid';
+import SlideMenu from './SlideMenu';
 
 const NavBar = ({ setTheme, checked, openModal }) => {
   const [menuClass, setMenuClass] = useState('hidden');
@@ -88,44 +89,11 @@ const NavBar = ({ setTheme, checked, openModal }) => {
           </ul>
         </div>
       </div>
-
-      <div
-        onMouseLeave={() => {
-          document.addEventListener('click', onClickOutsideListener);
-        }}
-        id="slider"
-        className={`absolute md:hidden flex flex-col w-60 h-screen py-8 mt-2 space-y-2 font-semibold left-0 bg-white shadow-2xl dark:bg-gray-800 ${menuClass}`}>
-        <a
-          onClick={openMenu}
-          className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700  pl-10 py-1"
-          href="#">
-          Home
-        </a>
-        <a
-          onClick={openMenu}
-          className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700  pl-10 py-1"
-          href="#">
-          About
-        </a>
-        <a
-          onClick={openMenu}
-          className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700  pl-10 py-1"
-          href="#">
-          Courses
-        </a>
-        <a
-          onClick={openMenu}
-          className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700  pl-10 py-1"
-          href="#">
-          Jobs
-        </a>
-        <a
-          onClick={openMenu}
-          className=" text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700  pl-10 py-1"
-          href="#">
-          Contact
-        </a>
-      </div>
+      <SlideMenu
+        menuClass={menuClass}
+        openMenu={openMenu}
+        onClickOutsideListener={onClickOutsideListener}
+      />
     </nav>
   );
 };
