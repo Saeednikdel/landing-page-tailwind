@@ -58,7 +58,10 @@ function App() {
   };
   return (
     <div className={`min-h-screen px-auto ${theme}`}>
-      <div className="bg-white dark:bg-gray-600">
+      <div
+        className={`bg-white dark:bg-gray-600 ${
+          modalClass == 'block' && 'brightness-40'
+        }`}>
         <NavBar
           setTheme={handleTheme}
           checked={theme == 'dark'}
