@@ -40,9 +40,9 @@ const NavBar = ({ setTheme, checked, openModal }) => {
             onClick={openMenu}
             className=" md:hidden hover:cursor-pointer">
             {menuClass == 'slide-in' ? (
-              <XIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
+              <XIcon className="h-8 w-8 active:animate-spin text-gray-700 dark:text-gray-300" />
             ) : (
-              <MenuIcon className="h-6 w-6 active:animate-spin text-gray-700 dark:text-gray-300" />
+              <MenuIcon className="h-8 w-8 active:animate-spin text-gray-700 dark:text-gray-300" />
             )}
           </button>
           <a href="#">
