@@ -14,7 +14,7 @@ const SlideMenu = ({ menuClass, openMenu, onClickOutsideListener }) => {
         document.addEventListener('click', onClickOutsideListener);
       }}
       id="slider"
-      className={`absolute md:hidden flex flex-col w-80 h-screen pt-10 space-y-1 text-lg font-semibold left-0 bg-white shadow-2xl dark:bg-gray-800 text-gray-700 dark:text-gray-200 ${menuClass}`}>
+      className={`absolute md:hidden flex flex-col w-2/3 h-screen mt-3 pt-10 space-y-1 text-lg font-semibold left-0 bg-white shadow-2xl dark:bg-gray-800 text-gray-700 dark:text-gray-200 ${menuClass}`}>
       <a
         onClick={openMenu}
         className="hover:bg-gray-100 dark:hover:bg-gray-700 text-red-600 dark:text-red-500 bg-gray-100 dark:bg-gray-700 rounded-l-full flex px-1 py-2 hover:cursor-pointer ml-4">
